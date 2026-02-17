@@ -1,13 +1,10 @@
-import style from "./page.module.css"
+import "./page.module.css"
 
-import React from 'react'
 
-function page() {
+function Products() {
   return (
-    <div>
-        Producs
-    </div>
+    <div>Hello</div>
   )
 }
 
-export default page
+export default Products
