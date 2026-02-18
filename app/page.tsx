@@ -10,7 +10,6 @@ import levron23EliteImg from "../public/productsImg/lebron23elite.png";
 export default function Homepage() {
   return (
     <section className="flex flex-col min-h-screen w-full">
-      {/* Top banner */}
       <div className="flex items-center w-full h-14 bg-amber-100 justify-around shadow-md">
         <button className="hover:text-blue-500 font-bold transform transition-transform duration-300 hover:scale-105">
           <Link href={"/products"}>SHOP NOW</Link>
@@ -26,14 +25,12 @@ export default function Homepage() {
         </Link>
       </div>
 
-      {/* Header */}
       <div className="text-3xl font-bold p-6">
         <h1 className="flex justify-center hover:scale-103 cursor-pointer hover:underline transition-all duration-500 tracking-tighter">
           DAY TO NIGHT COLLECTIONS
         </h1>
       </div>
 
-      {/* Product grid */}
       <div className="grid grid-cols-2 w-full gap-1">
         <Link
           href="/products"
@@ -77,7 +74,7 @@ export default function Homepage() {
           </div>
           <div className="p-4">
             <p className="text-red-600 font-semibold mt-1">Just In</p>
-            <p className="font-semibold text-[16px] mt-1">Kobie 3 Proto</p>
+            <p className="font-semibold text-[16px] mt-1">Kobe 3 Protro</p>
             <p className="text-gray-500 mt-1">Basketball Shoes</p>
             <p className="mt-1">$220</p>
           </div>
