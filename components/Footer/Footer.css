@@ -1,0 +1,36 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(20, 20, 20);
+  padding: 4rem 6rem;
+}
+
+.footer div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  min-width: 180px;
+}
+
+.footer h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  color: #fff;
+}
+
+.footer p {
+  font-size: 0.95rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer p:hover {
+  color: #fff;
+  transform: translateX(3px);
+}
+
+.footer img {
+  margin-bottom: 0.5rem;
+}
