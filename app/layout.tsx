@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import Navbar from "@/components/Navbar/Navbar"
-import Footer from "@/components/Footer/Footer"
+import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "Lux-Sole",
@@ -22,9 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar />
-        {children}
-        <Footer />
+        <div className="overflow-x-hidden">
+          <Navbar />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

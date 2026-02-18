@@ -13,10 +13,12 @@
   background-color: white;
 }
 
+/* Right Content */
 .logo {
   filter: brightness(0);
 }
 
+/* Left Content */
 .search-container {
   display: flex;
   align-items: center;

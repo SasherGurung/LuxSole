@@ -1,10 +1,11 @@
-import "./page.module.css"
 
 
-function Products() {
+function ProductList() {
   return (
-    <div>Hello</div>
+    <div className="">
+      
+    </div>
   )
 }
 
-export default Products
+export default ProductList
