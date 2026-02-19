@@ -1,5 +1,6 @@
 import { products } from "../../data/products";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ProductList() {
   return (
@@ -36,7 +37,7 @@ export default function ProductList() {
 
       <div className="grid grid-cols-3 gap-5 p-8">
         {products.map((product) => (
-          <div key={product.id} className="rounded-2xl shadow-md aspect-square overflow-hidden hover:shadow-xl hover:scale-101 transition-all duration-300 cursor-pointer">
+          <Link href={`/products/${product.id}`} key={product.id} className="rounded-2xl shadow-md aspect-square overflow-hidden hover:shadow-xl hover:scale-101 transition-all duration-300 cursor-pointer">
           <div className="w-full h-2/3 overflow-hidden">
             <Image
               src={product.img}
@@ -50,7 +51,7 @@ export default function ProductList() {
             <p className="text-gray-500 mt-1">{product.category}</p>
             <p className="mt-1">${product.price}</p>
           </div>
-        </div>
+        </Link>
         ))}
       </div>
     </section>
