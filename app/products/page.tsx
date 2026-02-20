@@ -41,7 +41,7 @@ export default function ProductList() {
           <div className="w-full h-2/3 overflow-hidden">
             <Image
               src={product.img}
-              alt="Kobe 3 Proto"
+              alt={product.name}
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>

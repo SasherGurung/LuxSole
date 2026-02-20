@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useParams } from "next/navigation"; // ✅ get params in client
+import { useParams } from "next/navigation";
 import { products } from "../../../data/products";
 import Image from "next/image";
 
@@ -15,7 +15,7 @@ export default function ProductsId() {
   const product = products.find((item) => item.id === id);
 
   if (!product) {
-    return <p className="p-10 text-xl">Product not found</p>;
+    return <p className="flex justify-center p-43 font-bold text-4xl">Product not found!</p>;
   }
 
   const sizes = [5, 5.5, 6, 6.6, 7, 7.5, 8, 8.8, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5];

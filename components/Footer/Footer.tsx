@@ -13,14 +13,14 @@ function Footer() {
       </div>
       <div className="footer-column">
         <h1>Links</h1>
-        <p>Home Page</p>
+        <Link href={"/"}><p>Home Page</p></Link>
         <p>Contact</p>
         <p>Terms of Service</p>
         <p>Privacy Policy</p>
       </div>
       <div className="footer-column">
         <h1>Products</h1>
-        <p>All Products</p>
+        <Link href={"/products"}><p>All Products</p></Link>
         <p>New Arraivals</p>
         <p>Best Sellers</p>
         <p>Sale</p>
