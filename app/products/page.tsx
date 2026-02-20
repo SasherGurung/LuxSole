@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function ProductList() {
   return (
-    <section className="flex ">
+    <section className="flex">
       <div className="w-2xl p-6 bg-white shadow-lg rounded-xl space-y-6 mt-5">
         <div>
           <h2 className="text-xl font-bold mb-2">Sort By</h2>
