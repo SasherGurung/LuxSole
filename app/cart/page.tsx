@@ -80,7 +80,7 @@ function Cart() {
         </div>
         <div className="flex flex-col mt-5 gap-4">
             <button className="flex justify-center border font-bold text-white bg-black py-5 rounded-4xl hover:bg-gray-300 hover:text-black cursor-pointer hover:scale-102 transition-transform duration-200">Checkout</button>
-            <button className="flex justify-center border font-bold py-5 rounded-4xl cursor-pointer hover:scale-102 transition-transform duration-200">Esewa</button>
+            <button className="flex justify-center border font-bold py-5 rounded-4xl cursor-pointer hover:scale-102 transition-transform duration-200">Esewa / Khalti</button>
           </div>
       </div>
     </section>

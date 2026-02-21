@@ -34,7 +34,7 @@ export default function ProductsId() {
         <div className="flex flex-col w-lg">
           <p className="text-1xl text-gray-500 pt-10">{product.category}</p>
           <p className="pt-8 text-3xl font-bold tracking-tight">{product.name}</p>
-          <p className="pt-2 font-semibold">${product.price}</p>
+          <p className="pt-2 font-semibold">${(product.priceCents / 100).toFixed(2)}</p>
           <p className="pt-5 tracking-tight font-stretch-50%">{product.description}</p>
           <p className="pt-3">
             <strong>SKU:</strong> {product.sku}

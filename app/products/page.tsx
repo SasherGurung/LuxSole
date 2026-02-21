@@ -49,7 +49,7 @@ export default function ProductList() {
             <p className="text-red-600 font-semibold mt-1">{product.tag}</p>
             <p className="font-semibold text-[16px] mt-1">{product.name}</p>
             <p className="text-gray-500 mt-1">{product.category}</p>
-            <p className="mt-1">${product.price}</p>
+            <p className="mt-1">${(product.priceCents / 100).toFixed(2)}</p>
           </div>
         </Link>
         ))}
