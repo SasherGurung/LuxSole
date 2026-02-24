@@ -35,28 +35,7 @@ function Cart() {
             </div>
           </div>
         </div>
-        <div className="flex border rounded-md overflow-hidden mt-4">
-          <Image src={adiZeroEvoImg} className="" width={220} height={220} alt="AdiZero"></Image>
-          <div className="flex w-full justify-between">
-            <div className="text-gray-700 m-5">
-              <p className="text-xl font-bold">D.O.N. ISSUE 7 Shoes</p>
-              <p className="text-[16px] tracking-tight mb-20">Size:12</p>
-              <select className="border rounded-md px-6 py-2.5 bg-gray-100">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-            </div>
 
-            <div className="flex justify-center h-20 w-20">
-              <button className="overflow-hidden">
-                <Image src={deleteImg} className="cursor-pointer hover:scale-110 transition-transform duration-100" width={25} height={25} alt="Delete"></Image>
-              </button>
-            </div>
-          </div>
-        </div>
       </div>
       <div className="flex-col flex w-2/3">
         <p className="text-4xl tracking-wider mb-2">

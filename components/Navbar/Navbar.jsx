@@ -10,14 +10,12 @@ import logoImg from "../../public/assets/logo.png";
 
 function Navbar() {
   return (
-    // Right Content
     <div className="navbar">
       <div className="logo">
         <Link href={"/"}>
           <Image src={logoImg} height={180} width={200} alt="logo"></Image>
         </Link>
       </div>
-      {/* Left Content */}
       <div className="left-content">
         <div className="search-container">
           <input type="text" placeholder="Search" />

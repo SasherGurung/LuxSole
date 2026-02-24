@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function ProductsId() {
 
-  const [selectedSize, setSelectedSize] = useState<number | null>(null);
+  const [selectedSize, setSelectedSize] = useState(null);
   
   const params = useParams();
   const id = Number(params?.id);

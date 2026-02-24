@@ -1,8 +1,19 @@
-import { products } from "../../data/products";
+"use client";
+
+import { useEffect, useState } from "react";
+import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function ProductList() {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://localhost:3000/api/products").then((response) => {
+      setProducts(response.data);
+    });
+  }, []);
+
   return (
     <section className="flex">
       <div className="w-2xl p-6 bg-white shadow-lg rounded-xl space-y-6 mt-5">
@@ -15,7 +26,7 @@ export default function ProductList() {
             <option>Price: High to Low</option>
           </select>
         </div>
-
+``
         <div>
           <h2 className="text-lg font-bold mb-2">Category</h2>
           <div className="space-y-2">
@@ -37,21 +48,26 @@ export default function ProductList() {
 
       <div className="grid grid-cols-3 gap-5 p-8">
         {products.map((product) => (
-          <Link href={`/products/${product.id}`} key={product.id} className="rounded-2xl shadow-md aspect-square overflow-hidden hover:shadow-xl hover:scale-101 transition-all duration-300 cursor-pointer">
-          <div className="w-full h-2/3 overflow-hidden">
-            <Image
-              src={product.img}
-              alt={product.name}
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-            />
-          </div>
-          <div className="p-3">
-            <p className="text-red-600 font-semibold mt-1">{product.tag}</p>
-            <p className="font-semibold text-[16px] mt-1">{product.name}</p>
-            <p className="text-gray-500 mt-1">{product.category}</p>
-            <p className="mt-1">${(product.priceCents / 100).toFixed(2)}</p>
-          </div>
-        </Link>
+          <Link
+            href={`/products/${product.id}`}
+            key={product.id}
+            className="rounded-2xl shadow-md aspect-square overflow-hidden hover:shadow-xl hover:scale-101 transition-all duration-300 cursor-pointer"
+          >
+            <div className="w-full h-2/3 overflow-hidden">
+              <Image
+                placeholder="blur"
+                src={product.img}
+                alt={product.name}
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="p-3">
+              <p className="text-red-600 font-semibold mt-1">{product.tag}</p>
+              <p className="font-semibold text-[16px] mt-1">{product.name}</p>
+              <p className="text-gray-500 mt-1">{product.category}</p>
+              <p className="mt-1">${(product.priceCents / 100).toFixed(2)}</p>
+            </div>
+          </Link>
         ))}
       </div>
     </section>
