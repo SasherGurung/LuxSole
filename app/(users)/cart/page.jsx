@@ -1,7 +1,8 @@
-import React from "react";
+'use client'
+
 import Image from "next/image";
-import adiZeroEvoImg from "../../public/productsImg/adizero-evo.png";
-import deleteImg from "../../public/assets/delete.png";
+import adiZeroEvoImg from "../../../public/productsImg/adizero-evo.png";
+import deleteImg from "../../../public/assets/delete.png";
 
 function Cart() {
   return (
@@ -11,7 +12,7 @@ function Cart() {
           <strong>YOUR BAG</strong>
         </p>
         <p className="tracking-tight text-[15px] text-gray-600">
-          Items in your bag are not reserved — check out now to make them yours.
+          Items in your bag are not reserved. Check out now to make them yours.
         </p>
         <div className="flex border rounded-md overflow-hidden mt-4">
           <Image src={adiZeroEvoImg} className="" width={220} height={220} alt="AdiZero"></Image>
@@ -27,7 +28,6 @@ function Cart() {
                 <option>5</option>
               </select>
             </div>
-
             <div className="flex justify-center h-20 w-20">
               <button className="overflow-hidden">
                 <Image src={deleteImg} className="cursor-pointer hover:scale-110 transition-transform duration-100" width={25} height={25} alt="Delete"></Image>
@@ -35,7 +35,6 @@ function Cart() {
             </div>
           </div>
         </div>
-
       </div>
       <div className="flex-col flex w-2/3">
         <p className="text-4xl tracking-wider mb-2">
@@ -54,12 +53,18 @@ function Cart() {
             <p>$111</p>
             <p>$15</p>
             <p>$126</p>
-            <p className="mt-4 tracking-tight"><strong>$300</strong></p>
+            <p className="mt-4 tracking-tight">
+              <strong>$300</strong>
+            </p>
           </div>
         </div>
         <div className="flex flex-col mt-5 gap-4">
-            <button className="flex justify-center border font-bold text-white bg-black py-5 rounded-4xl hover:bg-gray-300 hover:text-black cursor-pointer hover:scale-102 transition-transform duration-200">Checkout</button>
-            <button className="flex justify-center border font-bold py-5 rounded-4xl cursor-pointer hover:scale-102 transition-transform duration-200">Esewa / Khalti</button>
+            <button className="flex justify-center border font-bold text-white bg-black py-5 rounded-4xl hover:bg-gray-300 hover:text-black cursor-pointer hover:scale-102 transition-transform duration-200">
+              Checkout
+            </button>
+            <button className="flex justify-center border font-bold py-5 rounded-4xl cursor-pointer hover:scale-102 transition-transform duration-200">
+              Esewa / Khalti
+            </button>
           </div>
       </div>
     </section>
