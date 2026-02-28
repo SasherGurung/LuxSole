@@ -21,7 +21,7 @@ export default function Homepage() {
   const featuredProducts = products.slice(0, 3);
 
   return (
-    <section className="flex flex-col min-h-screen w-full">
+    <section className="flex flex-col min-h-screen w-full mt-16">
       <div className="flex flex-col sm:flex-row items-center justify-between sm:justify-around bg-amber-100 shadow-md px-4 py-3 gap-2 text-center">
         <Link
           href="/products"

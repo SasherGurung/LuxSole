@@ -5,9 +5,9 @@
   height: 4rem;
   padding: 0 7rem;
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 1100;
+  z-index: 1200;
   gap: 20rem;
   box-shadow: 0 0 0 2 rgb(218, 218, 218);
   background-color: white;
