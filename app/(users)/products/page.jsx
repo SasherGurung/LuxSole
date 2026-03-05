@@ -87,21 +87,21 @@ export default function ProductList() {
             ))}
           </div>
           <div className="flex justify-center gap-2 mt-8">
-          {Array.from({ length: totalPages }, (_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentPage(index + 1)}
-              className={`px-4 py-2 border rounded-md
+            {Array.from({ length: totalPages }, (_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentPage(index + 1)}
+                className={`px-4 py-2 border rounded-md
         ${
           currentPage === index + 1
             ? "bg-black text-white"
             : "hover:bg-gray-200"
         }`}
-            >
-              {index + 1}
-            </button>
-          ))}
-        </div>
+              >
+                {index + 1}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
     </section>

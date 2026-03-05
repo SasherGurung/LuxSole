@@ -26,7 +26,7 @@ export default function ProductsId() {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 mt-10">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20">
         <div className="relative w-full h-96 sm:h-125 lg:h-screen rounded-2xl overflow-hidden">
           <Image
